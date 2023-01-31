@@ -8,7 +8,7 @@ export const PostSkeleton = () => {
   return (
     <div className={styles.skeleton}>
       <Stack spacing={1}>
-        <Skeleton variant="rectangular" width="100%" heigth={300} />
+        <Skeleton variant="rectangular" width="100%" height={300} />
         <div className={styles.skeletonContent}>
           <div className={styles.skeletonUser}>
             <Skeleton variant="cricular" width={40} height={40} style={{ marginRight: 10 }} />
