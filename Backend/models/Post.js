@@ -19,7 +19,7 @@ const PostSchema = new mongoose.Schema(
       default: [],
     },
 
-    viwsCount: {
+    viewsCount: {
       type: Number,
       default: 0,
     },

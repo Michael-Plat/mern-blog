@@ -38,7 +38,7 @@ export const getOne = async (req, res) => {
         _id: postId,
       },
       {
-        $inc: { viwsCount: 1 },
+        $inc: { viewsCount: 1 },
       },
       {
         returnDocument: 'after',
