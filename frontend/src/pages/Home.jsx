@@ -13,6 +13,7 @@ import { useAppDispatch } from '../redux/store';
 
 export const Home = () => {
   const dispatch = useAppDispatch();
+  const userData = useSelector((state) => state.auth.data);
   const { posts, tags } = useSelector((state) => state.posts);
 
   const isPostsLoading = posts.status === 'loading';
@@ -45,7 +46,7 @@ export const Home = () => {
                 viewsCount={obj.viewsCount}
                 commentsCount={5}
                 tags={obj.tags}
-                isEditable
+                isEditable={userData?._id === obj.user._id}
                 isLoading={false}
               />
             ),
